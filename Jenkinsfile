@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+        agent {
+        node {
+            label 'nodejs-16'
+        }
+    }
 
     environment {
         // You must set the following environment variables
